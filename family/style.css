@@ -1,0 +1,149 @@
+body{
+    overflow: hidden;
+}
+
+.workspace{
+    margin: 20px;
+    border-radius: 8px;
+    width: calc(100% - 60px);
+    height: min-content;
+    table-layout: fixed;
+    border: 2px solid rgb(186, 186, 186);
+}
+
+.navbar{
+    height: 100vh;
+    /* position: fixed */
+}
+
+th{
+    /* background: var(--blue); */
+    /* color: white; */
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+tr:nth-child(odd){
+    /* background: rgb(210, 204, 204); */
+}
+
+th, td{
+    padding: 40px;
+    border-right: 2px solid rgb(186, 186, 186);
+}
+
+td{
+    padding-top: 10px;
+}
+
+.pricing{
+    font-size: 30px;
+    font-family: 'Bruno Ace SC', cursive;
+}
+
+.rate-time{
+    font-size: 18px;
+}
+
+.purchase-btn{
+    font-size: 20px;
+    color: var(--dark-blue);
+    border: 2px solid var(--blue);
+    padding: 20px;
+    border-radius: 100px;
+    width: 100%;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.3s background;
+}
+
+.preferred{
+    border: 2px solid var(--dark-blue);
+    background: var(--blue);
+}
+
+.purchase-btn:hover{
+    background: rgb(226, 225, 225);
+}
+
+.workspace-wrapper{
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.plan-details{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: var(--dark-blue);
+}
+
+.popular{
+    border-left: 5px solid var(--dark-blue);
+    border-right: 5px solid var(--dark-blue);
+}
+
+th.popular{
+    border-top: 5px solid var(--dark-blue);
+    border-radius: 0px 8px 0px 0px;
+}
+
+.popular-last{
+    border-bottom: 5px solid var(--dark-blue);
+    border-radius: 0px 0px 8px 0px;
+}
+
+.popular.plan-details{
+    text-shadow: 0px 0px 10px var(--blue);
+}
+
+.plan-imgs{
+    height: 170px;
+    width: 100%;
+    border-radius: 8px;
+    outline: 2px solid var(--red);
+}
+
+#constitution, #motivation{
+    padding: 20px;
+    font-size: 16px;
+    background: rgb(197, 215, 235);
+    font-family: 'Bruno Ace SC', cursive;
+}
+
+.two-col{
+    display: grid;
+    grid-template-columns: auto 500px;
+}
+
+iframe{
+    margin-top: 15px;
+}
+
+#motivation{
+    font-size: 24px;
+}
+
+.consultant{
+    position: relative;
+}
+
+.consultant-img{
+    background: url(../src/consultant.png);
+    position: absolute;
+    left: 100%;
+    transform: translate(-100%, 0%);
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.consultant-img::before{
+    content: 'Consultant';
+    position: absolute;
+    bottom: 0px;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    width: 100%;
+}

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
 :root {
     --red: #ee5858;
     --blue: #779ee6;
@@ -113,7 +115,7 @@ body {
 }
 
 .banner-greetings{
-    color: var(--blue);
+    color: rgb(0, 76, 255);
     font-size: 30px;
     position: absolute;
     bottom: 30px;
@@ -125,18 +127,21 @@ body {
     display: grid;
     margin-top: 20px;
     padding: 20px;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: auto auto;
+    justify-content: center;
 }
 
 .user-profile{
     border-right: 2px solid var(--blue);
     padding: 20px;
+    justify-self: start;
 }
 
 .profile-picture{
     background-image: url(src/pfp.png);
     background-size: cover;
     border-radius: 50%;
+    height: 300px;
     width: 100%;
     aspect-ratio: 1;
 }
@@ -145,6 +150,7 @@ body {
     display: block;
     text-align: center;
     margin-top: 10px;
+    font-family: 'Bruno Ace SC', cursive;
 }
 
 .cards{
@@ -160,4 +166,46 @@ body {
     width: 200px;
     margin-right: 10px;
     border: 2px solid rgb(200, 200, 200);
+    background-size: cover;
+    background-position: 70% 0%;
+    position: relative;
+}
+
+.card::before{
+    position: absolute;
+    /* inset: 0; */
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    /* background: linear-gradient(
+        to bottom,
+        transparent,
+        rgba(255, 255, 255, 0.487)
+    ); */
+    padding-top: 5px;
+    border-style: double;
+    border: #779ee6;
+    border-width: 1px;
+    padding-left: 3px;
+    padding-bottom: 10px;
+    background-color: beige;
+    color: #0e0e0e;
+    border-radius: 0px 0px 8px 8px;
+}
+
+.family-planning{
+    background-image: url(src/family.jpg);
+}
+
+.family-planning::before{
+    content: "Family";
+}
+
+.personal-planning{
+    background-image: url(src/personal.jpg);
+    background-position: 20% 0%;
+}
+
+.personal-planning::before{
+    content: "Scholar";
 }
