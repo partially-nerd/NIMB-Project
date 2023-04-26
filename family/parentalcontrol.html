@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parental Control</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="parentalcontrol.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="navbar">
+            <button class="navbar-item" id="navbar-home"><i class="fa-solid fa-house"></i></button>
+            <button class="navbar-item" id="navbar-profile"><i class="fa-solid fa-user"></i></button>
+            <span class="navbar-divider"></span>
+            <button class="navbar-item" id="navbar-settings"><i class="fa-solid fa-gear"></i></button>
+            <button class="navbar-item" id="navbar-logout"><i class="fa-solid fa-right-from-bracket"></i></button>
+            <button class="navbar-item" id="navbar-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="workspace-wrapper">
+
+<div class="account-selection">
+    <div style="--name: 'User 1'; --img: url('../src/accounts/user1.png')" class="account"></div>
+    <div style="--name: 'User 2'; --img: url('../src/accounts/user2.png')" class="account"></div>
+    <div style="--name: 'User 3'; --img: url('../src/accounts/user3.jpg')" class="account active"></div>
+</div>
+
+<div class="settings-page">
+    <div class="log">
+        <iframe src="Book.pdf" height="900" width="1024"frameborder="0"></iframe>
+    <!-- <p id="class"><h1>nimb trusts family over business</h1></p>
+    <a href="Book.htm">view the expense</a> -->
+    </div>
+    <div class="settings">
+        <input type="number" placeholder="Max monthly expenditure" class="input-settings pull-limit">
+        <input type="number" placeholder="Transaction Limit" class="input-settings spend-limit">
+    </div>
+</div>
+
+<div class="notifications">
+    <div class="notification">
+        <span class="time">14:15 Today</span>
+        <span class="msg">User 1 has pulled Rs 200</span>
+    </div>
+    <div class="notification">
+        <span class="time">14:30 Today</span>
+        <span class="msg">User 1 has pulled Rs 400</span>
+    </div>
+</div>
+
+        </div>
+    </div>
+</body>
+</html>

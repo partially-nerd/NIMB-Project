@@ -1,19 +1,10 @@
-body{
-    overflow: hidden;
+.navbar{
+    height: 100vh;
+    /* position: fixed */
 }
 
 .workspace{
     margin: 20px;
-    border-radius: 8px;
-    width: calc(100% - 60px);
-    height: min-content;
-    table-layout: fixed;
-    border: 2px solid rgb(186, 186, 186);
-}
-
-.navbar{
-    height: 100vh;
-    /* position: fixed */
 }
 
 th{

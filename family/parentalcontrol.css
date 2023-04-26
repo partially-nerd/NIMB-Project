@@ -1,0 +1,118 @@
+.workspace-wrapper{
+    display: grid;
+    grid-template-columns: 250px auto;
+    padding: 10px;
+}
+
+.account-selection{
+    border: 2px solid rgb(209, 209, 209);
+    border-radius: 8px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.account{
+    background-image: var(--img);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    height: 200px;
+    border-radius: 8px;
+    border-bottom: 2px solid rgb(209, 209, 209);
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: 0.3s transform;
+}
+
+.account:hover{
+    transform: scale(1.05);
+}
+
+.account::before{
+    position: absolute;
+    inset: 0;
+    content: '';
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        rgba(255, 255, 255, 0.529)
+    );
+    backdrop-filter: opacity(0.8);
+}
+
+.account::after{
+    position: absolute;
+    bottom: 0px;
+    line-height: 40px;
+    right: 20px;
+    content: var(--name);
+    backdrop-filter: opacity(0.8);
+}
+
+.account.active{
+    border: 2px solid var(--dark-blue);
+}
+
+.account.active::before{
+    backdrop-filter: contrast(1.2) blur(0px);
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        rgba(183, 174, 225, 0.529)
+    );
+}
+
+.settings-page{
+    display: grid;
+    padding: 10px;
+    grid-template-rows: 90% 10%;
+}
+
+.settings{
+    text-align: left;
+    padding-left: 30px;
+}
+
+.input-settings{
+    width: 200px;
+    height: 40px;
+    border: 2px solid rgb(209, 209, 209);
+    background: transparent;
+    padding: 0px 10px;
+}
+
+.notifications{
+    padding: 10px;
+    line-height: 40px;
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+}
+
+.notification{
+    padding: 10px;
+    padding-left: 30px;
+    width: 250px;
+    border: 2px solid rgb(202, 202, 202);
+    background: rgb(209, 209, 209);
+    line-height: 40px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: 0.3s transform, 0.3s border;
+}
+
+.notification:hover{
+    transform: scale(1.05);
+    border: 2px solid var(--dark-blue);
+}
+
+.time,.msg{
+    display: block;
+}
+
+iframe{
+    height: calc(100% - 20px);
+    width: 100%;
+}
