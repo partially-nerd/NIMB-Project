@@ -10,13 +10,13 @@
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="index.css">
 </head>
-<body>
+<body onload="checkIfFirstLoad()">
     <div class="navbar-expanded" style="left: -400px" onblur="expandNav()">
-        <a href="index.html" class="navbar-expand-item">Preplanning</a>
-        <a href="school.html" class="navbar-expand-item">School</a>
-        <a href="campus.html" class="navbar-expand-item">Campus</a>
-        <a href="oldage.html" class="navbar-expand-item">Old Age</a>
-        <a href="../personal/personal.html" class="navbar-expand-item">Personal</a>
+        <a href="family/index.html" class="navbar-expand-item">Preplanning</a>
+        <a href="family/school.html" class="navbar-expand-item">School</a>
+        <a href="family/campus.html" class="navbar-expand-item">Campus</a>
+        <a href="family/oldage.html" class="navbar-expand-item">Old Age</a>
+        <a href="personal/personal.html" class="navbar-expand-item">Personal</a>
     </div>
     <div class="wrapper">
         <div class="navbar">
@@ -35,6 +35,11 @@
                 <button class="close-learnmore" onclick="closeLearnMore()"><i class="fa-solid fa-circle-xmark"></i></button>
             </div>
             <div class="banner">
+                <div class="transactions">
+                    <button class="transaction-btns" style="--text: 'Load Wallet'"><i class="fa-solid fa-wallet"></i></button>
+                    <button class="transaction-btns" style="--text: 'Bank Transfer'"><i class="fa-solid fa-piggy-bank"></i></button>
+                    <button class="transaction-btns" style="--text: 'Mobile Transfer'"><i class="fa-solid fa-mobile"></i></button>
+                </div> 
                 <div class="banner-child">
                     <span class="banner-greetings">Welcome to NIMB</span>
                 </div>
@@ -46,20 +51,13 @@
                 </div>
                 <div class="cards">
                     <!-- <a href="family/familyplanning.html"> -->
-                        <div class="card family-planning" onclick="location.href = 'family/familyplanning.html'"></div>
+                        <div class="card family-planning" onclick="location.href = 'family/index.html'"></div>
                     <!-- </a>
                     <a href="personal/personal.html"> -->
                         <div class="card personal-planning" onclick="location.href = 'personal/personal.html'"></div>
                     <!-- </a> -->
                 </div>
-            </div>
-            <div class="transactions">
-                <button class="transaction-btns" style="--text: 'Load Wallet'"><i class="fa-solid fa-wallet"></i></button>
-                <button class="transaction-btns" style="--text: 'Bank Transfer'"><i class="fa-solid fa-piggy-bank"></i></button>
-                <button class="transaction-btns" style="--text: 'Mobile Transfer'"><i class="fa-solid fa-mobile"></i></button>
-                <button class="transaction-btns" style="--text: 'Remittance'"><i class="fa-solid fa-laptop-arrow-down"></i></button>
-                <button class="transaction-btns" style="--text: 'Send Money'"><i class="fa-solid fa-paper-plane-top"></i></button>
-            </div> <br><br>
+            </div><br><br>
         </div>
     </div>
 </body>

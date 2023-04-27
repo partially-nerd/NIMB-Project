@@ -30,3 +30,10 @@ function checkAnswer() {
     if (that.innerHTML == "360 C") that.classList.add("correct");
     else that.classList.add("incorrect");
 }
+
+function checkIfFirstLoad() {
+    userName = localStorage.getItem("username");
+    if (userName == null) {
+        window.location.href = 'setup.html';
+    }
+}

@@ -178,6 +178,12 @@ body {
     background-size: cover;
     background-position: 70% 0%;
     position: relative;
+    cursor: pointer;
+    transition: 0.3s transform;
+}
+
+.card:hover{
+    transform: scale(1.03);
 }
 
 .card::before{

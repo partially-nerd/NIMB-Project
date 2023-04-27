@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setup</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="setup.css">
+    <script src="setup.js" defer></script>
+</head>
+<body onload="bodyReady()">
+    <div class="wrapper">
+        <div class="caption"></div>
+        <div class="center central-portion">
+            <div class="center setting-things-up">
+                <i class="fa-solid fa-circle-right setup-delayer" style="--delay: 400ms"></i>
+                <i class="fa-solid fa-circle-right setup-delayer" style="--delay: 800ms"></i>
+                <i class="fa-solid fa-circle-right setup-delayer" style="--delay: 1200ms"></i>
+            </div>
+            <div class="center credentials-wrapper">
+                <input type="text" class="credentials" id="uname" placeholder="Username">
+                <input type="text" class="credentials" id="rname" placeholder="Real name">
+                <input type="password" class="credentials" id="pass" placeholder="Password" onkeyup="submit(event)">
+            </div>
+            <div class="center profile-picture">
+                <input type="file" id="pfp-selector" accept="image/png, image/jpeg">
+                <img class="pfp-display"></img>
+                <button class="proceed" onclick="finalize()">Proceed to page</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
