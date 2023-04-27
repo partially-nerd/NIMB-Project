@@ -15,3 +15,18 @@ function checkCookies() {
 }
 
 checkCookies()
+
+function expandNav() {
+    navbar = $(".navbar-expanded")[0]
+    if (navbar.style.left == "-400px") {
+        navbar.style.left = "50px";
+    } else{
+        navbar.style.left = "-400px"
+    }
+}
+
+function checkAnswer() {
+    that = document.activeElement;
+    if (that.innerHTML == "360 C") that.classList.add("correct");
+    else that.classList.add("incorrect");
+}

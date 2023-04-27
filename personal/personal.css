@@ -1,0 +1,60 @@
+.schemes-container{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: calc(50vw - 400px) 370px 370px;
+}
+
+.scheme-3{
+    margin-left: 20px;
+}
+
+.col-2{
+    display: grid;
+    width: calc(100vw - 470px);
+    grid-template-columns: auto auto auto;
+}
+
+.heading, .sub-heading{
+    text-align: center;
+    display: block;
+    font-family: 'Bruno Ace SC', cursive;
+    font-size: 30px;
+}
+
+.details, .col-title{
+    font-size: 24px;
+}
+
+.sub-heading{
+    font-size: 20px;
+}
+
+.col-sub{
+    text-align: left;
+    font-size: 16px;
+}
+
+.quiz-grid{
+    display: grid;
+    padding: 40px;
+    column-gap: 20px;
+    row-gap: 20px;
+    grid-template-columns: auto auto;
+}
+
+.answer{
+    border-radius: 8px;
+    cursor: pointer;
+    border: 0px;
+    height: 120px;
+    font-size: 30px;
+    transition: 0.3s background;
+}
+
+.correct{
+    background: rgb(183, 238, 100);
+}
+
+.incorrect{
+    background: rgb(255, 50, 47);
+}

@@ -1,0 +1,22 @@
+::-webkit-scrollbar{
+    background: var(--blue);
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: var(--dark-blue);
+}
+
+.transactions{
+    display: grid;
+    grid-template-columns: repeat(5, 70px);
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.transaction-btns{
+    padding: 20px;
+    border-radius: 60px;
+    border: 0px;
+    font-size: 24px;
+}

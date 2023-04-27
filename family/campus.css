@@ -1,0 +1,146 @@
+.workspace{
+    background-color: lightblue;
+    border: 2px solid rgb(53, 86, 219) !important;
+}
+
+.workspace-wrapper{
+    position: relative;
+}
+
+th, td{
+    padding: 20px;
+    border-right: 2px solid rgb(53, 86, 219);
+    cursor: pointer;
+}
+
+.purchase-btn{
+    background: yellow;
+    color: black;
+}
+
+.two-col{
+    position: relative;
+}
+
+.first-one{
+    grid-template-columns: auto 700px;
+}
+
+.signup{
+    position: absolute;
+    z-index: 10;
+    width: 80%;
+    background: url("../src/bgSignup.jpg");
+    background-size: cover;
+    transition: 0.7s opacity;
+}
+
+.form{
+    padding: 10px;
+    position: relative;
+    justify-self: center;
+    align-self: center;
+    height: 500px;
+    width: 400px;
+    background: var(--blue);
+    animation: formEnter 1s ease-in-out reverse;
+}
+
+@keyframes formEnter {
+    to {
+        right: -100%;
+    }
+}
+
+.signup-label{
+    display: block;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+}
+
+.form-entry, .submit{
+    display: block;
+    color: white;
+    width: calc(100% - 50px);
+    height: 40px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: transparent;
+    border: 0;
+    outline: 2px dashed transparent;
+    margin-top: 20px;
+    transition: 0.3s outline;
+}
+
+.form-entry{
+    border: 2px solid yellow;
+}
+
+.form-entry:nth-child(1){
+    margin-top: 40px;
+}
+
+.form-entry:focus{
+    outline: 2px dashed yellow;
+}
+
+label{
+    font-size: 10px;
+    line-height: 20px;
+    margin-top: -40px;
+    backdrop-filter: blur(25px);
+    padding-left: 20px;
+    color: transparent;
+    padding-right: 20px;
+    visibility: hidden;
+    transition: 0.3s color;
+}
+
+
+label{
+    color: yellow;
+    font-size: 16px;
+    visibility: visible;
+    margin-top: 5px;
+}
+
+.submit{
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: tomato;
+}
+
+.QUIZ{border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+    border: 2px solid rgb(200, 200, 200);
+    background-size: cover;
+    background-position: 70% 0%;
+    position: relative;
+    background: yellow;
+    padding-top: 40px;
+    align-self: center;
+}
+
+.simg{float:right}
+.floa{float: right;}
+
+.img{float: left;}
+#constitution{
+    padding-top: 5px;
+    border-style: double;
+    border: #779ee6;
+    border-width: 1px;
+    padding-left: 3px;
+    padding-bottom: 10px;
+    backdrop-filter: blur(25px);
+    font-size: 15px;
+    font-family: 'Bruno Ace SC', cursive;
+}

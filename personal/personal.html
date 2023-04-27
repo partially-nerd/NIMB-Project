@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIMB || Personal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../script.js"></script>
+    <link rel="stylesheet" href="../family/oldage.css">
+    <link rel="stylesheet" href="../family/style.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="personal.css">
+</head>
+<body>
+    <div class="navbar-expanded" style="left: -400px" onblur="expandNav()">
+        <a href="../family/" class="navbar-expand-item">Preplanning</a>
+        <a href="../family/school.html" class="navbar-expand-item">School</a>
+        <a href="../family/campus.html" class="navbar-expand-item">Campus</a>
+        <a href="../family/oldage.html" class="navbar-expand-item">Old Age</a>
+        <a href="./personal.html" class="navbar-expand-item">Personal</a>
+    </div>
+    <div class="wrapper">
+        <div class="navbar">
+            <button class="navbar-item" id="navbar-expand" onclick="expandNav()"><i class="fa-solid fa-bars"></i></button>
+            <button class="navbar-item" id="navbar-home"><i class="fa-solid fa-house"></i></button>
+            <button class="navbar-item" id="navbar-profile"><i class="fa-solid fa-user"></i></button>
+            <span class="navbar-divider"></span>
+            <button class="navbar-item" id="navbar-settings"><i class="fa-solid fa-gear"></i></button>
+            <button class="navbar-item" id="navbar-logout"><i class="fa-solid fa-right-from-bracket"></i></button>
+            <button class="navbar-item" id="navbar-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="workspace-wrapper">
+
+<div class="schemes-container">
+    <span class="divider"></span>
+    <div class="scheme scheme-1">
+        <span class="table-row title"></span>
+        <span class="table-row pricing">$199 <span class="rate-time">/month</span></span>
+        <span class="table-row plan-details">Get admission at extremely cheap prices, or even none at all</span>
+        <img src="../src/graduate.jpg" alt="" class="table-row img">
+    </div>
+    <div class="scheme scheme-3 preferred">
+        <span class="table-row title"></span>
+        <span class="table-row pricing">$399 <span class="rate-time">/month</span></span>
+        <span class="table-row plan-details">Admission open. Get your professional degree at MIT</span>
+        <img src="../src/mit.jpg" alt="" class="table-row img">
+    </div>
+</div>
+
+<hr><br><br>
+
+<span class="heading">Part Time Job</span>
+
+<div class="two-cols">
+    <div style="--img: url('../src/job.jpg')" class="col-1 img"></div>
+    <div class="col-2">
+        <div class="col-col1">
+            <span class="col-title">Educational Qualifications</span><br><br>
+            <li class="details">Diploma in Maths</li>
+            <li class="details">Bachelors in CA</li>
+        </div>
+        <div class="col-col2">
+            <span class="col-title">Work Experience</span><br><br>
+            <li class="details">1 year interns</li>
+            <li class="details">2 years as cashier</li>
+        </div>
+        <div class="col-col3">
+            <span class="col-title">Earnings</span><br><br>
+            <span class="details pricing">$499 <span class="rate-time">/month</span></span>
+        </div>
+    </div>
+</div>
+
+<hr><br><br>
+
+<span class="heading">Full Time Job</span>
+<span class="sub-heading">9 - 5</span>
+
+<div class="two-cols">
+    <div style="--img: url('../src/job2.jpg')" class="col-1 img"></div>
+    <div class="col-2">
+        <div class="col-col1">
+            <span class="col-title">Educational Qualifications</span><br><br>
+            <li class="details">Diploma in Maths</li>
+            <li class="details">Bachelors in CA</li>
+            <li class="details">Masters complete</li>
+        </div>
+        <div class="col-col2">
+            <span class="col-title">Work Experience</span><br><br>
+            <li class="details">1 year interns</li>
+            <li class="details">2 years as cashier</li>
+            <li class="details">4 years prior work at bank</li>
+        </div>
+        <div class="col-col3">
+            <span class="col-title">Earnings</span><br><br>
+            <span class="details pricing">$699 <span class="rate-time">/month</span></span><br><br>
+            <span class="sub-heading col-sub">9 - 5</span>
+        </div>
+    </div>
+</div>
+
+<hr><br><br>
+
+<div class="quiz">
+    <div class="heading">QUIZ</div>
+    <span class="question sub-heading">What is the boiling point of Mercury?</span><br>
+    <div class="quiz-grid">
+        <button class="answer" onclick="checkAnswer()">100 C</button>
+        <button class="answer" onclick="checkAnswer()">480 C</button>
+        <button class="answer" onclick="checkAnswer()">360 C</button>
+        <button class="answer" onclick="checkAnswer()">700 K</button>
+    </div>
+</div>
+
+<div class="consultant">
+    <div class="consultant-img"></div>
+</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -32,7 +32,7 @@ body {
     background: var(--dark-blue);
     display: grid;
     border-right: 2px solid var(--blue);
-    grid-template-rows: 50px 50px auto 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px auto 50px 50px 50px;
 }
 
 .navbar-item {
@@ -217,4 +217,32 @@ body {
 
 .personal-planning::before{
     content: "Scholar";
+}
+
+.navbar-expanded{
+    position: fixed;
+    left: -400px;
+    top: 0;
+    width: 300px;
+    height: 100vh;
+    z-index: 5;
+    padding-top: 30px;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(25px);
+    border-radius: 0px 10px 10px 0px;
+    transition: 0.3s left;
+}
+
+.navbar-expand-item{
+    display: block;
+    line-height: 40px;
+    background: transparent;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 20px
+}
+
+.navbar-expand-item:hover{
+    background: rgba(255, 255, 255, 0.05);
 }

@@ -8,18 +8,27 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <div class="navbar-expanded" style="left: -400px" onblur="expandNav()">
+        <a href="index.html" class="navbar-expand-item">Preplanning</a>
+        <a href="school.html" class="navbar-expand-item">School</a>
+        <a href="campus.html" class="navbar-expand-item">Campus</a>
+        <a href="oldage.html" class="navbar-expand-item">Old Age</a>
+        <a href="../personal/personal.html" class="navbar-expand-item">Personal</a>
+    </div>
     <div class="wrapper">
         <div class="navbar">
+            <button class="navbar-item" id="navbar-expand" onclick="expandNav()"><i class="fa-solid fa-bars"></i></button>
             <button class="navbar-item" id="navbar-home"><i class="fa-solid fa-house"></i></button>
-            <button class="navbar-item" id="navbar-profile"><i class="fa-solid fa-user"></i></button>
+            <button class="navbar-item" id="navbar-profile" onclick="window.location.href = 'family/parentalcontrol.html'"><i class="fa-solid fa-user"></i></button>
             <span class="navbar-divider"></span>
             <button class="navbar-item" id="navbar-settings"><i class="fa-solid fa-gear"></i></button>
             <button class="navbar-item" id="navbar-logout"><i class="fa-solid fa-right-from-bracket"></i></button>
             <button class="navbar-item" id="navbar-search"><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
-        <div class="workspace">
+        <div class="workspace" style="height: 100vh; width: calc(100vw - 50px); overflow-x: hidden; overflow-y: scroll;">
             <div class="learnmore">
                 <div class="logo-nimb"></div>
                 <span class="learnmore-info">NIMB has just changed its terms and conditions</span>
@@ -44,6 +53,13 @@
                     <!-- </a> -->
                 </div>
             </div>
+            <div class="transactions">
+                <button class="transaction-btns" style="--text: 'Load Wallet'"><i class="fa-solid fa-wallet"></i></button>
+                <button class="transaction-btns" style="--text: 'Bank Transfer'"><i class="fa-solid fa-piggy-bank"></i></button>
+                <button class="transaction-btns" style="--text: 'Mobile Transfer'"><i class="fa-solid fa-mobile"></i></button>
+                <button class="transaction-btns" style="--text: 'Remittance'"><i class="fa-solid fa-laptop-arrow-down"></i></button>
+                <button class="transaction-btns" style="--text: 'Send Money'"><i class="fa-solid fa-paper-plane-top"></i></button>
+            </div> <br><br>
         </div>
     </div>
 </body>
