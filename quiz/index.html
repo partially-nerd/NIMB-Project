@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIMB || QUIZ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="../script.js"></script>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div class="navbar-expanded" style="left: -400px" onblur="expandNav()">
+        <a href="../family/index.html" class="navbar-expand-item">Preplanning</a>
+        <a href="../family/school.html" class="navbar-expand-item">School</a>
+        <a href="../family/campus.html" class="navbar-expand-item">Campus</a>
+        <a href="../family/oldage.html" class="navbar-expand-item">Old Age</a>
+        <a href="../personal/personal.html" class="navbar-expand-item">Personal</a>
+    </div>
+    <div class="wrapper">
+        <div class="navbar">
+            <button class="navbar-item" id="navbar-expand" onclick="expandNav()"><i
+                    class="fa-solid fa-bars"></i></button>
+            <button class="navbar-item" onclick="window.location.href = '../index.html'" id="navbar-home"><i
+                    class="fa-solid fa-house"></i></button>
+            <button class="navbar-item" id="navbar-profile"
+                onclick="window.location.href = '../family/parentalcontrol.html'"><i
+                    class="fa-solid fa-user"></i></button>
+            <span class="navbar-divider"></span>
+            <button class="navbar-item" id="navbar-settings"><i class="fa-solid fa-gear"></i></button>
+            <button class="navbar-item" id="navbar-logout"><i class="fa-solid fa-right-from-bracket"></i></button>
+            <button class="navbar-item" id="navbar-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="workspace-wrapper">
+
+<div class="quiz-center">
+    <!-- <span class="quiz-qn">What's your name?</span>
+    <div class="options">
+        <button onclick="revealCorrect()" class="option" data-correct="true">Avinav</button>
+        <button onclick="revealCorrect()" class="option" data-correct="false">Abhinav</button>
+        <button onclick="revealCorrect()" class="option" data-correct="false">Abhinab</button>
+        <button onclick="revealCorrect()" class="option" data-correct="false">Avinab</button>
+    </div>
+    <button class="next"onclick="next()">Next Question</button> -->
+</div>
+
+        </div>
+    </div>
+</body>
+
+</html>

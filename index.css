@@ -11,7 +11,7 @@
     display: grid;
     grid-template-columns: repeat(3, 70px);
     justify-content: center;
-    column-gap: 10px;
+    column-gap: 20px;
     position: absolute;
     z-index: 10;
     top: 40%;
@@ -24,6 +24,7 @@
     padding: 20px;
     border-radius: 60px;
     border: 0px;
+    position: relative;
     cursor: pointer;
     font-size: 24px;
     transition: 0.3s transform;
@@ -31,4 +32,13 @@
 
 .transaction-btns:hover{
     transform: scale(1.1);
+}
+
+.transaction-btns::before{
+    position: absolute;
+    bottom: -40px;
+    content: var(--text);
+    font-size: 12px;
+    left: 0;
+    width: 100%;
 }

@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
+.wrapper{
+    background: url(../src/setup.jpg) fixed center;
+    background-size: cover;
+}
+
+.quiz-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    height: min-content;
+    width: 40%;
+    backdrop-filter: blur(25px) contrast(1.2);
+
+    border-radius: 8px;
+    border: 2px solid var(--dark-blue);
+    padding: 20px;
+    /* padding-bottom: 0px; */
+    text-align: center;
+}
+
+.quiz-qn{
+    font-family: 'Bruno Ace SC', cursive;
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+}
+
+.options{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 20px;
+}
+
+.option{
+    height: 200px;
+    font-size: 30px;
+
+    border: 0;
+    outline: 0;
+    color: white;
+    cursor: pointer;
+
+    transition: 0.3s background, 0.3s transform;
+}
+
+.option:hover{
+    transform: scale(1.05);
+}
+
+.option:nth-child(1){
+    background: var(--red);
+    border-radius: 8px 0px 0px 0px;
+}
+
+.option:nth-child(2){
+    background: var(--blue);
+    border-radius: 0px 8px 0px 0px;
+}
+
+.option:nth-child(3){
+    background: var(--dark-blue);
+    border-radius: 0px 0px 0px 8px;
+}
+
+.option:nth-child(4){
+    background: rgb(255, 169, 99);
+    border-radius: 0px 0px 8px 0px;
+}
+
+.correct{
+    background: rgb(50, 255, 50) !important;
+}
+
+.incorrect{
+    background: rgb(255, 50, 50) !important;
+}
+
+.next{
+    height: 40px;
+    width: 200px;
+    border-radius: 8px;
+    background: transparent;
+    border: 0;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+
+    transition: 0.3s background;
+}
+
+.next:hover{
+    background: rgba(255,255,255,0.2);
+}
